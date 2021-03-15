@@ -1,9 +1,9 @@
 #!/bin/bash
 
-echo "---------------------------------------------------------------------------------------------------------"
+echo "-----------------------------------------------------------------------------------------------------------------------------------------------------------"
 dt=$(date '+%d/%m/%Y %H:%M:%S');
 echo "$dt"
-echo "---------------------------------------------------------------------------------------------------------"
+echo "-----------------------------------------------------------------------------------------------------------------------------------------------------------"
 
 # appel des commandes bc (calculatrice) et dig (requete dns) 
 command -v bc > /dev/null || { echo "package bc non trouvé"; exit 1; }
@@ -37,7 +37,7 @@ for d in $domains; do
     #printf "%-8s" "test$totaldomains"
     printf "%-13s" "$d"
 done
-printf "%-8s" "Average"
+printf "%-8s" "Moyenne"
 echo ""
 
 
@@ -65,8 +65,8 @@ for p in $dns; do
     done
 
     # calcul de la moyenne
-    avg=`bc -lq <<< "scale=2; $ftime/$totaldomains"`
-    echo "  $avg"
+    moy=`bc -lq <<< "scale=2; $ftime/$totaldomains"`
+    echo "  $moy"
 done
 
 exit 0;
