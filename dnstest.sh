@@ -27,7 +27,7 @@ dns="
 "
 
 # noms de domaines à tester
-domains="google.fr amazon.com facebook.com youtube.com wikipedia.fr twitter.com gmail.com insa-lyon.fr twitch.fr netflix.com"
+domains="google.fr amazon.com facebook.com youtube.com wikipedia.fr twitter.com gmail.com insa-lyon.fr twitch.tv netflix.com"
 
 
 totaldomains=0
